@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-import { C } from "@/style/theme/color";
+import { C } from "@/style/theme";
+import { Text } from "@/style/ui";
 
 import { ButtonAttribute } from "@/type/ui/ButtonAttribute.type";
-import { fonts } from "@/style/theme/font";
 
 const Button = ({
   width = "fit-content",
@@ -21,7 +21,7 @@ const Button = ({
       hoverBackgroundColor={hoverBackgroundColor}
       onClick={onClick}
     >
-      {label}
+      <Text fontType="Body">{label}</Text>
     </Container>
   );
 };
@@ -29,8 +29,6 @@ const Button = ({
 export default Button;
 
 const Container = styled.button<ButtonAttribute>`
-  ${fonts.Body}
-
   padding: 1rem 1.2rem;
 
   &:hover {
