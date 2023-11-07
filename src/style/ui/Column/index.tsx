@@ -7,7 +7,11 @@ const Column = ({
   gap = 0,
   children,
 }: ColumnAttribute) => {
-  <Container style={{ alignItems, justifyContent, gap }}>{children}</Container>;
+  return (
+    <Container style={{ alignItems, justifyContent, gap }}>
+      {children}
+    </Container>
+  );
 };
 
 const Container = styled.div`
