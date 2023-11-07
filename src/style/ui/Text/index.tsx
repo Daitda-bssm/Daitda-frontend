@@ -4,15 +4,13 @@ import { fonts } from "@/style/theme/font";
 
 type Font = keyof typeof fonts;
 
-export const Text = (
-  {
-    fontType,
-    color = "black",
-    textAlign = "center",
-    ellipsis = false,
-  }: TextAttribute,
-  children: React.ReactNode
-) => {
+const Text = ({
+  fontType,
+  color = "black",
+  textAlign = "center",
+  ellipsis = false,
+  children,
+}: TextAttribute) => {
   <Container
     fontType={fontType}
     ellipsis={ellipsis}
@@ -26,3 +24,5 @@ const Container = styled.div<{ fontType: Font; ellipsis: boolean }>`
   ${({ fontType }) => fontType};
   text-overflow: ${({ ellipsis }) => (ellipsis ? "ellipsis" : "clip")};
 `;
+
+export default Text;

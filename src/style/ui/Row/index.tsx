@@ -1,13 +1,21 @@
 import styled from "styled-components";
-import { RowAttribute } from "@/type/ui/flexBoxAttributes.type";
+import { RowAttribute } from "@/type/ui/FlexBoxAttributes.type";
 
-export const Row = (
-  { alignItems = "stretch", justifyContent = "stretch", gap = 0 }: RowAttribute,
-  children: React.ReactNode
-) => {
-  <Container style={{ alignItems, justifyContent, gap }}>{children}</Container>;
+const Row = ({
+  alignItems = "stretch",
+  justifyContent = "stretch",
+  gap = 0,
+  children,
+}: RowAttribute) => {
+  return (
+    <Container style={{ alignItems, justifyContent, gap }}>
+      {children}
+    </Container>
+  );
 };
 
 const Container = styled.div`
   display: flex;
 `;
+
+export default Row;
