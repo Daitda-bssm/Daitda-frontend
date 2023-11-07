@@ -1,4 +1,4 @@
-export const C = {
+const C = {
   gray900: "#1B1D1F",
   gray800: "#26282B",
   gray600: "#454C53",
@@ -8,6 +8,8 @@ export const C = {
   gray100: "#E8EBED",
   gray50: "#F7F8F9",
   green: "#53E183",
-  white: "#F5F5F5",
+  white: "#FFFFFF",
   black: "#222222",
 };
+
+export default C;
