@@ -1,18 +1,22 @@
 import styled from "styled-components";
-import { ColumnAttribute } from "@/type/ui/flexBoxAttributes.type";
+import { ColumnAttribute } from "@/type/ui/FlexBoxAttributes.type";
 
-export const Column = (
-  {
-    alignItems = "stretch",
-    justifyContent = "stretch",
-    gap = 0,
-  }: ColumnAttribute,
-  children: React.ReactNode
-) => {
-  <Container style={{ alignItems, justifyContent, gap }}>{children}</Container>;
+const Column = ({
+  alignItems = "stretch",
+  justifyContent = "stretch",
+  gap = 0,
+  children,
+}: ColumnAttribute) => {
+  return (
+    <Container style={{ alignItems, justifyContent, gap }}>
+      {children}
+    </Container>
+  );
 };
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export default Column;

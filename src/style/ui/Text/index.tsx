@@ -1,28 +1,30 @@
 import styled from "styled-components";
 import { TextAttribute } from "@/type/ui/TextAttribute.type";
-import { fonts } from "@/style/theme/font";
+import { C, fonts } from "@/style/theme";
 
 type Font = keyof typeof fonts;
 
-export const Text = (
-  {
-    fontType,
-    color = "black",
-    textAlign = "center",
-    ellipsis = false,
-  }: TextAttribute,
-  children: React.ReactNode
-) => {
-  <Container
-    fontType={fontType}
-    ellipsis={ellipsis}
-    style={{ color, textAlign }}
-  >
-    {children}
-  </Container>;
+const Text = ({
+  fontType,
+  color = "black",
+  textAlign = "center",
+  ellipsis = false,
+  children,
+}: TextAttribute) => {
+  return (
+    <Container
+      fontType={fontType}
+      ellipsis={ellipsis}
+      style={{ color, textAlign }}
+    >
+      {children}
+    </Container>
+  );
 };
 
+export default Text;
+
 const Container = styled.div<{ fontType: Font; ellipsis: boolean }>`
-  ${({ fontType }) => fontType};
+  ${({ fontType }) => fonts[fontType]};
   text-overflow: ${({ ellipsis }) => (ellipsis ? "ellipsis" : "clip")};
 `;
