@@ -6,6 +6,7 @@ const C = {
   gray400: "#9EA4AA",
   gray200: "#C9CDD2",
   gray100: "#E8EBED",
+  gray75: "#E0E0E0",
   gray50: "#F7F8F9",
   green: "#53E183",
   white: "#FFFFFF",
