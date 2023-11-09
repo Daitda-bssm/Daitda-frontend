@@ -6,7 +6,7 @@ const fontGenerator = (weight: string, size: number, lineHeight: number) => css`
   line-height: ${lineHeight}rem;
 `;
 
-export const fonts = {
+const fonts = {
   LargeTitle: fontGenerator("AppleSDGothicNeoSB00", 3.2, 3.9),
 
   Title1: fontGenerator("AppleSDGothicNeoR00", 2.6, 3.2),
@@ -20,3 +20,5 @@ export const fonts = {
   Footnote: fontGenerator("AppleSDGothicNeoR00", 1.2, 1.7),
   Caption: fontGenerator("AppleSDGothicNeoR00", 1.1, 1.6),
 };
+
+export default fonts;

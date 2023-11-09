@@ -11,6 +11,13 @@ const GlobalStyle = createGlobalStyle`
     font-size: 10px;
   }
 
+  button {
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+  }
+
 `;
 
 export default GlobalStyle;
