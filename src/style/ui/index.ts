@@ -5,3 +5,5 @@ export { default as Text } from "@/style/ui/Text";
 export { default as FlexibleImgContainer } from "@/style/ui/FlexibleImgContainer";
 export { default as Dropdown } from "@/style/ui/Dropdown";
 export { default as Radio } from "@/style/ui/Radio";
+export { default as CheckBox } from "@/style/ui/CheckBox";
+export { default as SearchBox } from "@/style/ui/SearchBox";

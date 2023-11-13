@@ -23,6 +23,10 @@ const Container = styled.div`
   min-height: 100vh;
 
   display: flex;
+  justify-content: center;
+
+  padding: 12rem 10rem 0 10rem;
+  box-sizing: border-box;
 `;
 
 export default AppLayout;

@@ -9,14 +9,14 @@ import { Text, FlexibleImgContainer } from "@/style/ui";
 import Arrow1 from "@/style/icon/arrow1.svg";
 import { useOutsideClick } from "@/hooks/common/useOutsideClick";
 
-const Dropdown = ({ defaultText, dropdownList, label }: DropdownAttribute) => {
+const Dropdown = ({ defaultText, dropdownList }: DropdownAttribute) => {
   const DropdownRef = useRef(null);
 
   const [isOpen, setIsOpen] = useOutsideClick(DropdownRef, false);
   const [defaultValue, setDefaultValue] = useState(defaultText);
 
   return (
-    <Container label={label}>
+    <Container>
       <SelectedDropdown
         ref={DropdownRef}
         onClick={() => setIsOpen((prev) => !prev)}
@@ -49,7 +49,7 @@ const Dropdown = ({ defaultText, dropdownList, label }: DropdownAttribute) => {
 
 export default Dropdown;
 
-const Container = styled.div<{ label: string }>`
+const Container = styled.div`
   width: 13rem;
   height: fit-content;
 
@@ -60,22 +60,6 @@ const Container = styled.div<{ label: string }>`
   gap: 0.5rem;
 
   ${fonts.SubHead};
-
-  &::before {
-    display: block;
-    position: absolute;
-    top: -3rem;
-    left: 0;
-
-    width: fit-content;
-    height: fit-content;
-
-    content: ${({ label }) => label};
-    ${fonts.Caption};
-    color: ${C.black};
-
-    background-color: black;
-  }
 `;
 
 const SelectedDropdown = styled.div`
