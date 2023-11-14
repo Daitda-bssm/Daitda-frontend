@@ -56,8 +56,6 @@ const Container = styled.div`
   position: relative;
 
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
 
   ${fonts.SubHead};
 `;
@@ -87,6 +85,9 @@ const SelectedDropdown = styled.div`
 
 const DropdownListContainer = styled.div`
   width: 100%;
+
+  position: absolute;
+  top: 4rem;
 
   display: flex;
   flex-direction: column;
