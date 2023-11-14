@@ -3,7 +3,7 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
 
-import Header from "@/components/common/header";
+import { Header } from "@/components";
 
 interface AppLayoutProps {
   children: ReactNode;
