@@ -18,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
   }
 
+  input {
+    outline: none;
+  }
+
 `;
 
 export default GlobalStyle;
