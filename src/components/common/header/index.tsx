@@ -35,7 +35,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 12rem;
+  padding: 0 8rem;
   box-sizing: border-box;
 
   z-index: 1;

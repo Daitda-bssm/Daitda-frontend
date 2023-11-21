@@ -8,7 +8,8 @@ const C = {
   gray100: "#E8EBED",
   gray75: "#E0E0E0",
   gray50: "#F7F8F9",
-  green: "#53E183",
+  green300: "#53E183",
+  green100: "#E2F9E9",
   white: "#FFFFFF",
   black: "#222222",
 };

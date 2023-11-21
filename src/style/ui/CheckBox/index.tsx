@@ -59,6 +59,6 @@ const CheckBoxElement = styled.div<{ isSelected: boolean }>`
     isSelected &&
     css`
       color: ${C.white};
-      background-color: ${C.green};
+      background-color: ${C.green300};
     `}
 `;
