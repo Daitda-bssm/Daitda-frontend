@@ -4,13 +4,13 @@ import Image from "next/image";
 import { FlexibleImgContainer } from "..";
 import { C, fonts } from "@/style/theme";
 
-import SearchIcon from "@/style/icon/searchIcon.svg";
+import { SearchIcon } from "@/style/icon";
 
 const SearchBox = () => {
   return (
     <Container>
       <FlexibleImgContainer width={1.6} height={1.8}>
-        <Image src={SearchIcon} alt="이미지를 불러오는데 실패했습니다." fill />
+        <SearchIcon />
       </FlexibleImgContainer>
       <SearchInput placeholder="추가로 원하시는 조건을 적어주세요." />
     </Container>

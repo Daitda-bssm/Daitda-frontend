@@ -6,7 +6,7 @@ import { useRef, useState } from "react";
 
 import { C, fonts } from "@/style/theme";
 import { Text, FlexibleImgContainer } from "@/style/ui";
-import Arrow1 from "@/style/icon/arrow1.svg";
+import { Arrow } from "@/style/icon";
 import { useOutsideClick } from "@/hooks/common/useOutsideClick";
 
 const Dropdown = ({ defaultText, dropdownList }: DropdownAttribute) => {
@@ -23,7 +23,7 @@ const Dropdown = ({ defaultText, dropdownList }: DropdownAttribute) => {
       >
         <Text fontType="SubHead">{defaultValue}</Text>
         <FlexibleImgContainer width={1.6} height={1.6}>
-          <Image src={Arrow1} alt="" fill />
+          <Arrow />
         </FlexibleImgContainer>
       </SelectedDropdown>
       {isOpen && (
