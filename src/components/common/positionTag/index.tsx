@@ -18,6 +18,8 @@ const PositonTag = ({ tagName }: PositionTagAttribute) => {
 export default PositonTag;
 
 const Container = styled.div`
+  width: fit-content;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
