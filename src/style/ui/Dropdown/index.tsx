@@ -56,8 +56,6 @@ const Container = styled.div`
   position: relative;
 
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
 
   ${fonts.SubHead};
 `;
@@ -88,6 +86,9 @@ const SelectedDropdown = styled.div`
 const DropdownListContainer = styled.div`
   width: 100%;
 
+  position: absolute;
+  top: 4rem;
+
   display: flex;
   flex-direction: column;
 
@@ -114,9 +115,10 @@ const DropdownListElement = styled.div`
   cursor: pointer;
 
   transition: 0.2s cubic-bezier(0.04, 0, 0, 0.89);
+  background-color: ${C.white};
 
   &:hover {
     color: ${C.white};
-    background-color: ${C.green};
+    background-color: ${C.green300};
   }
 `;

@@ -1,9 +1,5 @@
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
-
-type UseOutSideClickType = (
-  element: React.RefObject<HTMLDivElement>,
-  initialState: boolean
-) => [boolean, Dispatch<SetStateAction<boolean>>];
+import { UseOutSideClickType } from "@/type/hooks/useOutsideClickAttribute.type";
+import { useEffect, useState } from "react";
 
 export const useOutsideClick: UseOutSideClickType = (element, initialState) => {
   const [isActive, setIsActive] = useState(initialState);

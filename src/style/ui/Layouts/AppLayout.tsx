@@ -3,7 +3,7 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
 
-import Header from "@/components/common/header";
+import { Header } from "@/components";
 
 interface AppLayoutProps {
   children: ReactNode;
@@ -25,8 +25,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
 
-  padding: 12rem 10rem 0 10rem;
-  box-sizing: border-box;
+  padding: 12rem 8rem;
 `;
 
 export default AppLayout;
