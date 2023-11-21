@@ -7,6 +7,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   html {
     font-size: 10px;
   }
