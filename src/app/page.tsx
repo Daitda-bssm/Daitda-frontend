@@ -13,7 +13,7 @@ import {
 } from "@/style/ui";
 import Image from "next/image";
 
-import descIcon from "@/style/icon/descIcon.svg";
+import { DescIcon } from "@/style/icon";
 import { C } from "@/style/theme";
 
 import DummyData from "../dummy.json";
@@ -36,7 +36,7 @@ export default function Home() {
         <MainHeader>
           <Row>
             <FlexibleImgContainer width={1.2} height={1.2}>
-              <Image src={descIcon} alt="이미지 로딩에 실패하였습니다." fill />
+              <DescIcon />
             </FlexibleImgContainer>
             <Text fontType="Footnote">
               &nbsp; 조건에 맞는 인재들을 발굴해보세요.

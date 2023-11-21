@@ -1,14 +1,12 @@
-import { Row, ModalLayout } from "@/style/ui";
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import Image from "next/image";
 
-import { PositionTag } from "@/components";
-import { FlexibleImgContainer } from "@/style/ui";
+import { DirectSNSUrl, PositionTag } from "@/components";
+import { Row, ModalLayout, Column, FlexibleImgContainer } from "@/style/ui";
 import { C, fonts } from "@/style/theme";
-
-import CrossIcon from "@/style/icon/crossIcon.svg";
 import { useModal } from "@/hooks/common/useModal";
+
+import { CrossIcon } from "@/style/icon";
 
 import DummyData from "@/dummy.json";
 
@@ -20,25 +18,24 @@ const StudentInfoModal = () => {
       <Container modalState={modalState.animationState}>
         <CloseModalBtn onClick={closeModal}>
           <FlexibleImgContainer width={2} height={2}>
-            <Image
-              src={CrossIcon}
-              alt="이미지를 불러오는데 실패했습니다."
-              fill
-            />
+            <CrossIcon />
           </FlexibleImgContainer>
         </CloseModalBtn>
         <StudentInfoHeader>
           <임시이미지 />
-          <Row gap={2}>
+          <Column gap={1}>
+            <PositionTag tagName={DummyData.student[modalState.id].position} />
             <IntroduceWord>
               {DummyData.student[modalState.id].title}
               <br />
               {DummyData.student[modalState.id].name} 입니다.
             </IntroduceWord>
-            <DirectSNSUrl>
-              {DummyData.student[modalState.id].grade}
-            </DirectSNSUrl>
-          </Row>
+            <GradeAndMajor>
+              {DummyData.student[modalState.id].major} /{" "}
+              {DummyData.student[modalState.id].grade}학년
+            </GradeAndMajor>
+            <DirectSNSUrl />
+          </Column>
         </StudentInfoHeader>
       </Container>
     </ModalLayout>
@@ -48,11 +45,11 @@ const StudentInfoModal = () => {
 export default StudentInfoModal;
 
 const ShowModalAnimation = keyframes`
-  from {
-    transform: scale(0.3);
-    opacity: 0.1;
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
   }
-  to {
+  100% {
     transform: scale(1);
     opacity: 1;
   }
@@ -64,7 +61,7 @@ const CloseModalAnimation = keyframes`
     opacity: 1;
   }
   to {
-    transform: scale(0.3);
+    transform: scale(0.8);
     opacity: 0
   }
   `;
@@ -138,9 +135,15 @@ const IntroduceWord = styled.div`
   ${fonts.Title1};
 `;
 
-const DirectSNSUrl = styled.div`
-  display: flex;
-  flex-direction: column;
+const GradeAndMajor = styled.div`
+  width: fit-content;
+  height: fit-content;
 
-  gap: 1.1rem;
+  color: ${C.gray500};
+  background-color: ${C.gray100};
+
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.6rem;
+
+  ${fonts.SubHead}
 `;

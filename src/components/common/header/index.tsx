@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { FlexibleImgContainer, Row } from "@/style/ui";
 
-import Logo from "@/style/icon/Logo.svg";
+import { Logo } from "@/style/icon";
 import Button from "@/style/ui/Button";
 import { C } from "@/style/theme";
 
@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <Container>
       <FlexibleImgContainer width={7} height={2}>
-        <Image src={Logo} alt="이미지를 불러오지 못했습니다." fill />
+        <Logo />
       </FlexibleImgContainer>
       <Row>
         <Button label="로그인" />
