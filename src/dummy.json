@@ -1,0 +1,854 @@
+{
+  "student": [
+    {
+      "name": "이희성",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["HTML", "CSS", "Javascript"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김석진",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["React", "Next.js", "HTML"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김준경",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["PHP", "JQuery", "PReact"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "박우빈",
+      "grade": 3,
+      "position": "Embeded",
+      "Frameworks": ["Arduino", "Robot", "PCBstruct"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김호현",
+      "grade": 2,
+      "position": "BackEnd",
+      "Frameworks": ["Spring", "JQuery", "Unity"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "이희성",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["HTML", "CSS", "Javascript"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김석진",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["React", "Next.js", "HTML"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김준경",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["PHP", "JQuery", "PReact"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "박우빈",
+      "grade": 3,
+      "position": "Embeded",
+      "Frameworks": ["Arduino", "Robot", "PCBstruct"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김호현",
+      "grade": 2,
+      "position": "BackEnd",
+      "Frameworks": ["Spring", "JQuery", "Unity"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "이희성",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["HTML", "CSS", "Javascript"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김석진",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["React", "Next.js", "HTML"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김준경",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["PHP", "JQuery", "PReact"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "박우빈",
+      "grade": 3,
+      "position": "Embeded",
+      "Frameworks": ["Arduino", "Robot", "PCBstruct"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김호현",
+      "grade": 2,
+      "position": "BackEnd",
+      "Frameworks": ["Spring", "JQuery", "Unity"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "이희성",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["HTML", "CSS", "Javascript"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김석진",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["React", "Next.js", "HTML"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김준경",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["PHP", "JQuery", "PReact"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "박우빈",
+      "grade": 3,
+      "position": "Embeded",
+      "Frameworks": ["Arduino", "Robot", "PCBstruct"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김호현",
+      "grade": 2,
+      "position": "BackEnd",
+      "Frameworks": ["Spring", "JQuery", "Unity"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "이희성",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["HTML", "CSS", "Javascript"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김석진",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["React", "Next.js", "HTML"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김준경",
+      "grade": 2,
+      "position": "FrontEnd",
+      "Frameworks": ["PHP", "JQuery", "PReact"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "박우빈",
+      "grade": 3,
+      "position": "Embeded",
+      "Frameworks": ["Arduino", "Robot", "PCBstruct"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    },
+    {
+      "name": "김호현",
+      "grade": 2,
+      "position": "BackEnd",
+      "Frameworks": ["Spring", "JQuery", "Unity"],
+      "imgUrl": "",
+      "title": "성장할 줄 아는 개발자",
+      "major": "소프트웨어개발과",
+      "skills": [
+        "Spring을 사용할 수 있습니다",
+        "Java의 객체 지향을 이해하고 있습니다",
+        "CRUD를 만들 줄 압니다",
+        "아몰라 야매 디자인을 해왔습니다."
+      ],
+      "Awards": [
+        {
+          "date": "2022.07",
+          "desc": "교과우수상"
+        },
+        {
+          "date": "2022.08",
+          "desc": "교내 단어왕 선발 대회 최우수상"
+        },
+        {
+          "date": "2022.11",
+          "desc": "전국 SW경진대회 동상"
+        },
+        {
+          "date": "2023.05",
+          "desc": "교내 단어왕 선발 대회 장려상"
+        }
+      ],
+      "certificates": ["정보처리산업기사", "3D프린터운용기능사"]
+    }
+  ]
+}
