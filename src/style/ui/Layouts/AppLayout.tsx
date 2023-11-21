@@ -25,8 +25,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
 
-  padding: 12rem 10rem 0 10rem;
-  box-sizing: border-box;
+  padding: 12rem 8rem;
 `;
 
 export default AppLayout;
