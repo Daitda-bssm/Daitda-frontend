@@ -1,11 +1,12 @@
+import { SvgAttribute } from "@/type/ui/SvgAttribute.type";
 import React from "react";
 
-const NotionIcon = () => {
+const NotionIcon = ({ width, height }: SvgAttribute) => {
   return (
     <svg
-      width="100%"
-      height="100%"
-      viewBox="0 0 15 15"
+      width={`${width}rem`}
+      height={`${height}rem`}
+      viewBox="0 0 17 17"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
