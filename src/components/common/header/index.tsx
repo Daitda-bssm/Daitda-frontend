@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 
-import { FlexibleImgContainer, Row } from "@/style/ui";
+import { Row } from "@/style/ui";
 
 import { Logo } from "@/style/icon";
 import Button from "@/style/ui/Button";
@@ -10,9 +10,7 @@ import { C } from "@/style/theme";
 const Header = () => {
   return (
     <Container>
-      <FlexibleImgContainer width={7} height={2}>
-        <Logo />
-      </FlexibleImgContainer>
+      <Logo width={7} height={2} />
       <Row>
         <Button label="로그인" />
       </Row>

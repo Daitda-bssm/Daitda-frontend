@@ -5,13 +5,11 @@ import {
   AppLayout,
   CheckBox,
   Row,
-  FlexibleImgContainer,
   Radio,
   Dropdown,
   Text,
   SearchBox,
 } from "@/style/ui";
-import Image from "next/image";
 
 import { DescIcon } from "@/style/icon";
 import { C } from "@/style/theme";
@@ -19,8 +17,7 @@ import { C } from "@/style/theme";
 import DummyData from "../dummy.json";
 import { StudentBox, StudentInfoModal } from "@/components";
 import { useModal } from "@/hooks/common/useModal";
-import { useEffect, useRef } from "react";
-import { useOutsideClick } from "@/hooks/common/useOutsideClick";
+import { useEffect } from "react";
 
 export default function Home() {
   const { openModal, modalState } = useModal();
@@ -35,9 +32,7 @@ export default function Home() {
       <Container>
         <MainHeader>
           <Row>
-            <FlexibleImgContainer width={1.2} height={1.2}>
-              <DescIcon />
-            </FlexibleImgContainer>
+            <DescIcon width={1.2} height={1.2} />
             <Text fontType="Footnote">
               &nbsp; 조건에 맞는 인재들을 발굴해보세요.
             </Text>
