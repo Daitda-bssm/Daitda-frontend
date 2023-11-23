@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import Image from "next/image";
 
 import { DropdownAttribute } from "@/type/ui/DropdownAttribute.type";
 import { useRef, useState } from "react";
 
 import { C, fonts } from "@/style/theme";
-import { Text, FlexibleImgContainer } from "@/style/ui";
+import { Text } from "@/style/ui";
 import { Arrow } from "@/style/icon";
 import { useOutsideClick } from "@/hooks/common/useOutsideClick";
 
@@ -22,9 +21,7 @@ const Dropdown = ({ defaultText, dropdownList }: DropdownAttribute) => {
         onClick={() => setIsOpen((prev) => !prev)}
       >
         <Text fontType="SubHead">{defaultValue}</Text>
-        <FlexibleImgContainer width={1.6} height={1.6}>
-          <Arrow />
-        </FlexibleImgContainer>
+        <Arrow width={1.2} height={1.2} deg={isOpen ? 0 : -180} />
       </SelectedDropdown>
       {isOpen && (
         <DropdownListContainer>
@@ -68,6 +65,8 @@ const SelectedDropdown = styled.div`
 
   display: grid;
   grid-template-columns: 5fr 1fr;
+  justify-content: center;
+  align-items: center;
 
   gap: 1.3rem;
 
