@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { C } from "@/style/theme";
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -24,6 +25,11 @@ const GlobalStyle = createGlobalStyle`
 
   input {
     outline: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: ${C.black};
   }
 
 `;
