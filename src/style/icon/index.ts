@@ -6,3 +6,4 @@ export { default as Logo } from "@/style/icon/logo";
 export { default as NotionIcon } from "@/style/icon/notionIcon";
 export { default as SearchIcon } from "@/style/icon/searchIcon";
 export { default as VelogIcon } from "@/style/icon/velogIcon";
+export { default as EditIcon } from "@/style/icon/editIcon";
