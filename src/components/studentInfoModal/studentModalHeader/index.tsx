@@ -53,7 +53,7 @@ const 임시이미지 = styled.div`
 
 const StudentInfoHeader = styled.div`
   display: flex;
-  justify-content: space-between;
+  gap: 5rem;
 `;
 
 const IntroduceWord = styled.div`
