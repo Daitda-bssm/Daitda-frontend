@@ -23,5 +23,5 @@ const Arrow = ({ width, height, deg }: SvgAttribute) => {
 export default Arrow;
 
 const StyledSvg = styled.svg`
-  transition: 0.15s cubic-bezier(0.3, 0.49, 0.5, 1);
+  transition: 0.25s cubic-bezier(0.3, 0.49, 0.5, 1);
 `;
