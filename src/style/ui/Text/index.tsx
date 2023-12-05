@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { TextAttribute } from "@/type/ui/TextAttribute.type";
 import { C, fonts } from "@/style/theme";
 
@@ -26,5 +26,12 @@ export default Text;
 
 const Container = styled.div<{ fontType: Font; ellipsis: boolean }>`
   ${({ fontType }) => fonts[fontType]};
-  text-overflow: ${({ ellipsis }) => (ellipsis ? "ellipsis" : "clip")};
+  ${({ ellipsis }) =>
+    ellipsis
+      ? css`
+          text-overflow: ellipsis;
+        `
+      : css`
+          text-overflow: clip;
+        `}
 `;
