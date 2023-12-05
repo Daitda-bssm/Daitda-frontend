@@ -40,12 +40,15 @@ export default function Home() {
           <Row justifyContent="space-between" alignItems="center">
             <Row alignItems="center" gap={3.2}>
               <CheckBox checkboxList={["1학년", "2학년", "3학년"]} />
-              <Radio radioElementList={["전체", "남", "여"]} />
               <Dropdown
+                name="fe"
+                onChange={() => {}}
                 defaultText="취업 분야"
                 dropdownList={["IOS/Android", "디자인", "벡엔드", "프론트엔드"]}
               />
               <Dropdown
+                name="fe"
+                onChange={() => {}}
                 defaultText="프레임워크"
                 dropdownList={["React", "Next", "PHP", "JQuery"]}
               />
