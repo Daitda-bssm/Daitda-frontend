@@ -2,6 +2,7 @@ import React from "react";
 import styled, { RuleSet } from "styled-components";
 import { Text } from "@/style/ui";
 import { InputAttribute } from "@/type/ui/InputAttribute.type";
+import { C } from "@/style/theme";
 
 const Input = ({
   name,
@@ -41,4 +42,8 @@ const StyledInput = styled.input<{ fontType: RuleSet<object> }>`
   border: none;
   padding: 0.6rem;
   ${({ fontType }) => fontType};
+
+  &::placeholder {
+    color: ${C.gray400};
+  }
 `;
