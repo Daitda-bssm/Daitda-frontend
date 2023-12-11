@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { RowAttribute } from "@/type/ui/exBoxAttributes.type";
+import { RowAttribute } from "@/type/ui/FlexBoxAttributes.type";
 
 const Row = ({
   alignItems,

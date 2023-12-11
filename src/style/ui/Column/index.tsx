@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ColumnAttribute } from "@/type/ui/exBoxAttributes.type";
+import { ColumnAttribute } from "@/type/ui/FlexBoxAttributes.type";
 
 const Column = ({
   alignItems,
