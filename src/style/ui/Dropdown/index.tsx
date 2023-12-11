@@ -1,15 +1,19 @@
 import styled from "styled-components";
-import Image from "next/image";
 
 import { DropdownAttribute } from "@/type/ui/DropdownAttribute.type";
 import { useRef, useState } from "react";
 
 import { C, fonts } from "@/style/theme";
-import { Text, FlexibleImgContainer } from "@/style/ui";
-import Arrow1 from "@/style/icon/arrow1.svg";
+import { Text } from "@/style/ui";
+import { Arrow } from "@/style/icon";
 import { useOutsideClick } from "@/hooks/common/useOutsideClick";
 
-const Dropdown = ({ defaultText, dropdownList }: DropdownAttribute) => {
+const Dropdown = ({
+  defaultText,
+  name,
+  dropdownList,
+  onChange,
+}: DropdownAttribute) => {
   const DropdownRef = useRef(null);
 
   const [isOpen, setIsOpen] = useOutsideClick(DropdownRef, false);
@@ -21,23 +25,24 @@ const Dropdown = ({ defaultText, dropdownList }: DropdownAttribute) => {
         ref={DropdownRef}
         onClick={() => setIsOpen((prev) => !prev)}
       >
-        <Text fontType="SubHead">{defaultValue}</Text>
-        <FlexibleImgContainer width={1.6} height={1.6}>
-          <Image src={Arrow1} alt="" fill />
-        </FlexibleImgContainer>
+        <SelectedText>{defaultValue}</SelectedText>
+        <Arrow width={1.2} height={1.2} deg={isOpen ? 0 : -180} />
       </SelectedDropdown>
       {isOpen && (
         <DropdownListContainer>
-          {dropdownList.map((e, i) => {
+          {dropdownList.map((element, i) => {
             return (
               <DropdownListElement
                 key={i}
-                onClick={() => {
-                  setDefaultValue(e);
+                name={name}
+                value={element}
+                onClick={(e) => {
+                  setDefaultValue(element);
                   setIsOpen(false);
+                  onChange(e);
                 }}
               >
-                {e}
+                {element}
               </DropdownListElement>
             );
           })}
@@ -56,8 +61,6 @@ const Container = styled.div`
   position: relative;
 
   display: flex;
-
-  ${fonts.SubHead};
 `;
 
 const SelectedDropdown = styled.div`
@@ -68,11 +71,16 @@ const SelectedDropdown = styled.div`
 
   display: grid;
   grid-template-columns: 5fr 1fr;
+  justify-content: center;
+  align-items: center;
 
   gap: 1.3rem;
 
   border: 0.25px solid ${C.gray200};
   border-radius: 6px;
+
+  background-color: ${C.white};
+  outline: none;
 
   cursor: pointer;
 
@@ -81,6 +89,16 @@ const SelectedDropdown = styled.div`
   &:hover {
     background-color: ${C.gray50};
   }
+`;
+
+const SelectedText = styled.div`
+  width: 8rem;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  ${fonts.SubHead}
 `;
 
 const DropdownListContainer = styled.div`
@@ -98,7 +116,7 @@ const DropdownListContainer = styled.div`
   overflow: hidden;
 `;
 
-const DropdownListElement = styled.div`
+const DropdownListElement = styled.button`
   width: 100%;
   height: fit-content;
 
@@ -110,12 +128,17 @@ const DropdownListElement = styled.div`
 
   gap: 1.3rem;
 
+  background-color: white;
+  outline: none;
+
   border-bottom: 0.25px solid ${C.gray200};
 
   cursor: pointer;
 
   transition: 0.2s cubic-bezier(0.04, 0, 0, 0.89);
   background-color: ${C.white};
+
+  ${fonts.Caption};
 
   &:hover {
     color: ${C.white};

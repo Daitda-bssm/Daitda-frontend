@@ -1,17 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "next/image";
-import { FlexibleImgContainer } from "..";
 import { C, fonts } from "@/style/theme";
 
-import SearchIcon from "@/style/icon/searchIcon.svg";
+import { SearchIcon } from "@/style/icon";
 
 const SearchBox = () => {
   return (
     <Container>
-      <FlexibleImgContainer width={1.6} height={1.8}>
-        <Image src={SearchIcon} alt="이미지를 불러오는데 실패했습니다." fill />
-      </FlexibleImgContainer>
+      <SearchIcon width={1.6} height={1.8} />
       <SearchInput placeholder="추가로 원하시는 조건을 적어주세요." />
     </Container>
   );
@@ -35,5 +31,11 @@ const SearchInput = styled.input`
   border: none;
   outline: none;
 
+  transition: 0.25s cubic-bezier(0.3, 0.49, 0.5, 1);
+
   ${fonts.SubHead}
+
+  &:focus {
+    box-shadow: 0px 1.25px 0px ${C.gray800};
+  }
 `;

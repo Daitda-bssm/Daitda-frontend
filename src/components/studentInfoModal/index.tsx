@@ -1,45 +1,28 @@
-import { Row, ModalLayout } from "@/style/ui";
 import React from "react";
-import styled, { keyframes } from "styled-components";
-import Image from "next/image";
+import styled from "styled-components";
 
-import { PositionTag } from "@/components";
-import { FlexibleImgContainer } from "@/style/ui";
-import { C, fonts } from "@/style/theme";
-
-import CrossIcon from "@/style/icon/crossIcon.svg";
+import { ModalLayout } from "@/style/ui";
+import StudentModalHeader from "./studentModalHeader";
+import { C } from "@/style/theme";
 import { useModal } from "@/hooks/common/useModal";
 
-import DummyData from "@/dummy.json";
+import { CrossIcon, EditIcon } from "@/style/icon";
+import StudentModalBody from "./studentModalBody";
 
 const StudentInfoModal = () => {
   const { closeModal, modalState } = useModal();
 
   return (
     <ModalLayout>
-      <Container modalState={modalState.animationState}>
+      <Container>
+        <EditModalBtn>
+          <EditIcon width={2} height={2} />
+        </EditModalBtn>
         <CloseModalBtn onClick={closeModal}>
-          <FlexibleImgContainer width={2} height={2}>
-            <Image
-              src={CrossIcon}
-              alt="이미지를 불러오는데 실패했습니다."
-              fill
-            />
-          </FlexibleImgContainer>
+          <CrossIcon width={2} height={2} />
         </CloseModalBtn>
-        <StudentInfoHeader>
-          <임시이미지 />
-          <Row gap={2}>
-            <IntroduceWord>
-              {DummyData.student[modalState.id].title}
-              <br />
-              {DummyData.student[modalState.id].name} 입니다.
-            </IntroduceWord>
-            <DirectSNSUrl>
-              {DummyData.student[modalState.id].grade}
-            </DirectSNSUrl>
-          </Row>
-        </StudentInfoHeader>
+        <StudentModalHeader />
+        <StudentModalBody />
       </Container>
     </ModalLayout>
   );
@@ -47,29 +30,7 @@ const StudentInfoModal = () => {
 
 export default StudentInfoModal;
 
-const ShowModalAnimation = keyframes`
-  from {
-    transform: scale(0.3);
-    opacity: 0.1;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-`;
-
-const CloseModalAnimation = keyframes`
-  from {
-    transform: scale(1);
-    opacity: 1;
-  }
-  to {
-    transform: scale(0.3);
-    opacity: 0
-  }
-  `;
-
-const Container = styled.div<{ modalState: boolean }>`
+const Container = styled.div`
   width: fit-content;
   height: fit-content;
 
@@ -85,15 +46,9 @@ const Container = styled.div<{ modalState: boolean }>`
   gap: 4rem;
 
   overflow: hidden;
-  animation: ${({ modalState }) =>
-      modalState ? ShowModalAnimation : CloseModalAnimation}
-    0.5s cubic-bezier(0.23, 1, 0.12, 1.1) forwards;
 `;
 
 const CloseModalBtn = styled.div`
-  width: fit-content;
-  height: fit-content;
-
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -113,34 +68,26 @@ const CloseModalBtn = styled.div`
     transition: 0.1s cubic-bezier(0.3, 0.49, 0.5, 1);
     background-color: ${C.gray75};
   }
-
-  ${fonts.Title1}
 `;
 
-const 임시이미지 = styled.div`
-  width: 28rem;
-  height: 20rem;
+const EditModalBtn = styled.div`
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 
-  background-color: black;
-  border-radius: 1.2rem;
-`;
+  border-radius: 0.5rem;
+  cursor: pointer;
 
-const StudentInfoHeader = styled.div`
-  display: flex;
-  gap: 5rem;
-`;
+  padding: 1rem;
+  color: ${C.black};
+  transition: 0.25s cubic-bezier(0.3, 0.49, 0.5, 1);
 
-const IntroduceWord = styled.div`
-  display: flex;
-  flex-direction: column;
+  &:hover {
+    background-color: ${C.gray50};
+  }
 
-  gap: 0.9rem;
-  ${fonts.Title1};
-`;
-
-const DirectSNSUrl = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  gap: 1.1rem;
+  &:active {
+    transition: 0.1s cubic-bezier(0.3, 0.49, 0.5, 1);
+    background-color: ${C.gray75};
+  }
 `;

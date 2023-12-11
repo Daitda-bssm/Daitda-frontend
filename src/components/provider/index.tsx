@@ -3,6 +3,7 @@
 import React, { ReactNode } from "react";
 
 import GlobalStyle from "@/style/theme/global";
+import { Provider as JotaiProvider } from "jotai";
 
 interface ProviderProps {
   children: ReactNode;
@@ -12,7 +13,7 @@ const Provider = ({ children }: ProviderProps) => {
   return (
     <>
       <GlobalStyle />
-      {children}
+      <JotaiProvider>{children}</JotaiProvider>
     </>
   );
 };

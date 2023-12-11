@@ -16,7 +16,9 @@ const Button = ({
 }: ButtonAttribute) => {
   return (
     <Container
-      style={{ width, color, backgroundColor }}
+      style={{ width }}
+      color={color}
+      backgroundColor={backgroundColor}
       hoverColor={hoverColor}
       hoverBackgroundColor={hoverBackgroundColor}
       onClick={onClick}
@@ -29,7 +31,13 @@ const Button = ({
 export default Button;
 
 const Container = styled.button<ButtonAttribute>`
-  padding: 1rem 1.2rem;
+  padding: 1rem 1.6rem;
+  border-radius: 0.8rem;
+
+  transition: 0.25s cubic-bezier(0.3, 0.49, 0.5, 1);
+
+  color: ${({ color }) => color};
+  background-color: ${({ backgroundColor }) => backgroundColor};
 
   &:hover {
     color: ${({ hoverColor }) => hoverColor};

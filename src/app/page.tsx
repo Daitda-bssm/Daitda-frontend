@@ -5,22 +5,19 @@ import {
   AppLayout,
   CheckBox,
   Row,
-  FlexibleImgContainer,
   Radio,
   Dropdown,
   Text,
   SearchBox,
 } from "@/style/ui";
-import Image from "next/image";
 
-import descIcon from "@/style/icon/descIcon.svg";
+import { DescIcon } from "@/style/icon";
 import { C } from "@/style/theme";
 
 import DummyData from "../dummy.json";
 import { StudentBox, StudentInfoModal } from "@/components";
 import { useModal } from "@/hooks/common/useModal";
-import { useEffect, useRef } from "react";
-import { useOutsideClick } from "@/hooks/common/useOutsideClick";
+import { useEffect } from "react";
 
 export default function Home() {
   const { openModal, modalState } = useModal();
@@ -35,9 +32,7 @@ export default function Home() {
       <Container>
         <MainHeader>
           <Row>
-            <FlexibleImgContainer width={1.2} height={1.2}>
-              <Image src={descIcon} alt="이미지 로딩에 실패하였습니다." fill />
-            </FlexibleImgContainer>
+            <DescIcon width={1.2} height={1.2} />
             <Text fontType="Footnote">
               &nbsp; 조건에 맞는 인재들을 발굴해보세요.
             </Text>
@@ -45,12 +40,15 @@ export default function Home() {
           <Row justifyContent="space-between" alignItems="center">
             <Row alignItems="center" gap={3.2}>
               <CheckBox checkboxList={["1학년", "2학년", "3학년"]} />
-              <Radio radioElementList={["전체", "남", "여"]} />
               <Dropdown
+                name="fe"
+                onChange={() => {}}
                 defaultText="취업 분야"
                 dropdownList={["IOS/Android", "디자인", "벡엔드", "프론트엔드"]}
               />
               <Dropdown
+                name="fe"
+                onChange={() => {}}
                 defaultText="프레임워크"
                 dropdownList={["React", "Next", "PHP", "JQuery"]}
               />
